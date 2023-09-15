@@ -10,13 +10,27 @@ def exibeMatriz(matriz): # função para formatar matriz
             print(item, end='\t')
         print()
 
-matriz = [
+matriz = []
+
+'''matriz = [
     [1, 0, 0, 0, 0, 0],
     [0, 1, 0, 0, 0, 0],
     [0, 0, 1, 0, 0, 0],
     [0, 0, 0, 1, 0, 0],
     [0, 0, 0, 0, 1, 0],
     [0, 0, 0, 0, 0, 1]
-]
+]'''
+
+for linha in range(6):
+    lista = []
+    for coluna in range(6):
+        if linha == coluna:
+            num = 1
+            lista.append(num)
+        else: 
+            num = 0
+            lista.append(num)
+        
+    matriz.append(lista)
 
 exibeMatriz(matriz)
