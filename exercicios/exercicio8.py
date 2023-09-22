@@ -26,7 +26,7 @@ matrizTransposta = []
 
 for i in range(len(matriz[0])):
     linhaTransposta = []
-    for j in range(len(matriz)):
+    for j in range(len(matriz[0])):
         linhaTransposta.append(matriz[j][i])
     matrizTransposta.append(linhaTransposta)
 
